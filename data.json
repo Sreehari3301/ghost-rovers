@@ -28,7 +28,7 @@
       "launch": "1971-07-26",
       "status": "Left on the Moon. Science station shut down by command from Earth on 1977-09-30.",
       "hook": "They drove away. I stayed, and I kept listening.",
-      "story": "The astronauts of Apollo 15 left me here on the Moon in 1971, and I stayed on the job after they went home. I kept feeling for moonquakes, checking the Moon's magnetism, catching dust, and measuring heat from deep inside. A little generator that ran on plutonium gave me power, year after year, until the people on Earth told me to switch off in 1977.",
+      "story": "The astronauts of Apollo 15 left me here on the Moon in 1971, and I stayed on the job after they went home. I kept feeling for moonquakes, checking the Moon's magnetism, catching dust, and measuring heat from deep inside. A little generator that ran on plutonium gave me power, year after year, until the people on Earth told me to switch off in 1977. While they were here, the astronauts drove the first rover ever used on the Moon — 27.9 km around my landing site — and before they left, Scott dropped a hammer and a feather on camera, and both fell at exactly the same speed in the airless sky.",
       "facts": [
         "The lander Falcon touched down on 30 July 1971 at the foot of the Apennine mountains, near Hadley Rille.",
         "Astronauts David Scott and James Irwin made three moonwalks totaling 18 hours 35 minutes.",
@@ -65,7 +65,7 @@
       "launch": null,
       "status": "Last contact 22 March 2010. NASA declared the mission complete on 25 May 2011.",
       "hook": "Opportunity is my twin. We went to Mars to look for old water.",
-      "story": "I'm Spirit, and Opportunity is my twin. We were both sent to Mars as robot geologists, to hunt for signs of old water. I touched down in Gusev Crater on 3 January 2004 — a big crater that may once have held a lake. The rocks there told me something amazing: water had stuck around on Mars for a very long time.",
+      "story": "I'm Spirit, and Opportunity is my twin. We were both sent to Mars as robot geologists, to hunt for signs of old water. I touched down in Gusev Crater on 3 January 2004 — a big crater that may once have held a lake. The rocks there told me something amazing: water had stuck around on Mars for a very long time. I drove 7.7 km across the crater floor, reading the rocks like pages in a book, and every page told the same story — this dry, dusty place was once wet.",
       "facts": [
         "Spirit and Opportunity were identical twin rovers.",
         "Spirit landed on 3 January 2004 in Gusev Crater, a possible former lake inside a giant impact crater.",
@@ -103,7 +103,7 @@
       "launch": null,
       "status": "Last contact with Earth on 2018-06-10.",
       "hook": "I kept going for years past my plan, until a dust storm hid the Sun.",
-      "story": "I'm Opportunity. I landed on Meridiani Planum on 24 January 2004, where the minerals in the ground hinted that Mars used to be wet. I kept driving — 45.16 km in all, further than any machine had ever driven on another world. Then, in June 2018, a huge dust storm spread across the whole planet and hid the Sun from my solar panels. After that, I never got to talk to Earth again.",
+      "story": "I'm Opportunity. I landed on Meridiani Planum on 24 January 2004, where the minerals in the ground hinted that Mars used to be wet. I kept driving — 45.16 km in all, further than any machine had ever driven on another world. My driving record stood for years, until Perseverance finally passed it in October 2026. Once, in 2014, I took a picture of myself and saw the wind had swept much of the dust off my solar panels — the Martian wind kept me going. Then, in June 2018, a huge dust storm spread across the whole planet and hid the Sun from my solar panels. After that, I never got to talk to Earth again.",
       "facts": [
         "Opportunity landed on 24 January 2004 on Meridiani Planum, where mineral deposits suggested a wet past.",
         "It drove 45.16 km (28.06 miles), the off-Earth driving record until Perseverance passed it on 11 October 2026.",
@@ -139,7 +139,7 @@
       "launch": "2020-07-30",
       "status": "Last flight 2024-01-18. Mission declared complete 2024-01-25.",
       "hook": "Five flights was the plan. I flew 72.",
-      "story": "I'm Ingenuity, a little helicopter that weighs just 1.8 kg. I flew to Mars tucked underneath the Perseverance rover. On 19 April 2021, I did something no one had done before — a powered, controlled flight on another planet. I was only meant to try five short flights in 30 days, but I ended up flying 72 times over almost three years, flying ahead to scout for the rover and even spotting bits of its landing gear.",
+      "story": "I'm Ingenuity, a little helicopter that weighs just 1.8 kg. I flew to Mars tucked underneath the Perseverance rover. On 19 April 2021, I did something no one had done before — a powered, controlled flight on another planet. I was only meant to try five short flights in 30 days, but I ended up flying 72 times over almost three years, flying ahead to scout for the rover and even spotting bits of its landing gear. In all, I flew for about 129 minutes, covered 17 km, and climbed as high as 24 metres — all in air less than one percent as thick as Earth's.",
       "facts": [
         "Ingenuity launched on 30 July 2020 and landed in Jezero Crater on 18 February 2021.",
         "Its first flight, on 19 April 2021, was the first powered, controlled flight on another planet.",
@@ -175,7 +175,7 @@
       "launch": "2018-05-05",
       "status": "Last contact 15 December 2022. NASA declared the mission over on 21 December 2022.",
       "hook": "I didn't study Mars from above. I listened to its inside.",
-      "story": "I'm InSight. I landed on 26 November 2018 on Elysium Planitia, a flat and smooth plain. It wasn't picked because it looked exciting — it was picked because it was safe. My work was inside Mars, not on top of it. With my 1.8 m robotic arm, I set a seismometer and a heat probe down on the ground, then I listened for marsquakes. I could even hear the Martian wind rumbling, low and quiet, through my sensors.",
+      "story": "I'm InSight. I landed on 26 November 2018 on Elysium Planitia, a flat and smooth plain. It wasn't picked because it looked exciting — it was picked because it was safe. My work was inside Mars, not on top of it. With my 1.8 m robotic arm, I set a seismometer and a heat probe down on the ground, then I listened for marsquakes. I could even hear the Martian wind rumbling, low and quiet, through my sensors. Two little cubesats called MarCO flew to Mars with me — the first of their kind to travel between planets. And the marsquakes I heard are still teaching scientists today: they found lumps of old crash debris hiding deep inside Mars.",
       "facts": [
         "InSight launched on 5 May 2018 and landed on 26 November 2018 near the Martian equator.",
         "It studied the deep interior of Mars: crust, mantle and core.",
@@ -213,7 +213,7 @@
       "launch": "2007-09-27",
       "status": "Listed by NASA as a successful mission.",
       "hook": "I didn't just visit two worlds. I stayed with both of them.",
-      "story": "I'm Dawn, and I was built to travel far — NASA's first truly interplanetary spaceship. I flew out to the main asteroid belt, the ring of rocky worlds between Mars and Jupiter, and I didn't just pass by. I stayed a long while with two very different neighbours: Vesta, a giant asteroid, and Ceres, a dwarf planet.",
+      "story": "I'm Dawn, and I was built to travel far — NASA's first truly interplanetary spaceship. I flew out to the main asteroid belt, the ring of rocky worlds between Mars and Jupiter, and I didn't just pass by. I stayed a long while with two very different neighbours: Vesta, a giant asteroid, and Ceres, a dwarf planet. I set off on 27 September 2007, and NASA lists my mission as successful.",
       "facts": [
         "Dawn launched on 27 September 2007.",
         "It had extended stays at the giant asteroid Vesta and the dwarf planet Ceres.",
@@ -246,7 +246,7 @@
       "launch": "1996-02-17",
       "status": "Last contact 2001-02-28. A try to call it on 2002-12-10 failed.",
       "hook": "Landing was never part of my job. I did it anyway.",
-      "story": "I'm NEAR Shoemaker. My job was to circle an asteroid named Eros. In February 2000 I became the first human-made object ever to orbit an asteroid — though I got there about a year late, because an engine burn went wrong on the way. Then, on 12 February 2001, I drifted gently down and touched the surface at only about 6.4 km/h. Nobody had planned for me to land at all, but I made it — and I kept sending back data for about two more weeks, until the cold out there finally silenced me.",
+      "story": "I'm NEAR Shoemaker. My job was to circle an asteroid named Eros. On the way there I flew past another asteroid, Mathilde, in 1997. In February 2000 I became the first human-made object ever to orbit an asteroid — though I got there about a year late, because an engine burn went wrong on the way. Then, on 12 February 2001, I drifted gently down and touched the surface at only about 6.4 km/h. Nobody had planned for me to land at all, but I made it — and I kept sending back data for about two more weeks, until the cold out there finally silenced me. In the end I sent back about ten times more data than planned, including 160,000 pictures of Eros.",
       "facts": [
         "NEAR launched on 17 February 1996 and flew past asteroid Mathilde on 27 June 1997.",
         "An aborted engine burn in December 1998 delayed the Eros rendezvous by about a year.",
