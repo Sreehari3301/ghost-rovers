@@ -10,6 +10,9 @@ Machines: Apollo 15 science station, Spirit, Opportunity, Ingenuity, InSight, Da
 - `style.css`: styles (light and dark mode, mobile friendly)
 - `app.js`: tabs, map drawing, markers and story panel
 - `data.json`: all stories, facts and sources. Edit this to change content.
+- `mars.jpg`: the Mars map — NASA Ames / USGS Viking Orbiter mosaic (MDIM 2.1, 2048×1024, centred at 90°E so all four Mars markers fit).
+- `moon.jpg`: the Moon map — NASA/GSFC/Arizona State University LRO WAC nearside mosaic (1024×1024).
+- `ceres.jpg`, `eros.jpg`: real photos shown on the Deep Space map at the Dawn and NEAR markers — Ceres bright spots (Dawn, PIA19604) and Eros north polar mosaic (NEAR, PIA02923).
 
 ## Run locally
 
@@ -28,6 +31,8 @@ Add an object to `machines` in `data.json` with: `id`, `name`, `label` (short na
 ## Sources
 
 Every fact and source link comes only from the six NASA pages in the resource list: Apollo 15 lander (NSSDCA), Spirit and Opportunity, Ingenuity, InSight, Dawn and NEAR Shoemaker. Facts those pages do not give are left out and listed in each entry's `todo`.
+
+The Mars map image (`mars.jpg`) is separate from the facts: it is the NASA Ames / USGS Viking Orbiter colour mosaic (MDIM 2.1, public domain), centred at 90°E. Landing coordinates for the four Mars machines come from their landing-site records, not from the six pages, and are recorded in `data.json` as `lat`/`lon`.
 
 ## Open gaps (see `todo` in data.json)
 
