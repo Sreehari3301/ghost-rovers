@@ -95,7 +95,7 @@ body::after{
   12%{transform:rotate(var(--a,-45deg)) translateX(-55vw); opacity:0}
   100%{transform:rotate(var(--a,-45deg)) translateX(-55vw); opacity:0}
 }
-header,main,footer{position:relative; z-index:1; max-width:68rem; margin:0 auto; padding:0 1.25rem}
+header,main{position:relative; z-index:1; max-width:68rem; margin:0 auto; padding:0 1.25rem}
 header{padding-top:2rem; padding-bottom:1rem}
 h1,h2{font-family:Fraunces,Georgia,serif; font-weight:600; line-height:1.15; margin:0}
 h1{
@@ -178,14 +178,41 @@ header p{max-width:42rem; color:var(--muted); margin:.75rem 0 0}
 .panel ul{margin:0; padding-left:1.2rem}
 .panel li{margin:.3rem 0}
 .panel li::marker{color:var(--accent)}
-details{margin-top:1.25rem; border-top:1px solid var(--line); padding-top:1rem}
-summary{cursor:pointer; font-weight:700; color:var(--accent)}
+.ending{margin-top:1.25rem; border-top:1px solid var(--line); padding-top:1rem}
 .empty{color:var(--muted)}
 a{color:var(--accent)}
 :focus-visible{outline:3px solid var(--accent); outline-offset:3px}
-footer{padding-top:2.5rem; padding-bottom:3rem; color:var(--muted); font-size:.95rem}
-footer h2{font-size:1.4rem; color:var(--fg); margin-bottom:.5rem}
-footer p{max-width:56rem}
+/* Sidebar — sources, credits and links slide in from the right */
+.side-btn{
+  position:fixed; top:.75rem; right:.75rem; z-index:8;
+  width:2.75rem; height:2.75rem; padding:0; border-radius:.75rem;
+  border:1px solid var(--line); background:var(--card); color:var(--fg); cursor:pointer;
+  font:inherit; font-size:1.35rem; line-height:1;
+  display:flex; align-items:center; justify-content:center;
+  backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+}
+.side-btn:hover{border-color:var(--accent)}
+.sidebar{
+  position:fixed; top:0; right:0; height:100%; height:100dvh; width:min(22rem,88vw);
+  background:var(--card-solid); color:var(--fg);
+  border-left:1px solid var(--line); box-shadow:-18px 0 50px rgba(0,0,0,.45);
+  transform:translateX(105%); transition:transform .3s ease;
+  z-index:10; overflow-y:auto; padding:1.5rem; text-align:left;
+}
+body.side-open{overflow:hidden}
+body.side-open .sidebar{transform:none}
+.side-overlay{position:fixed; inset:0; background:rgba(2,4,12,.55); opacity:0; pointer-events:none; transition:opacity .3s ease; z-index:9}
+body.side-open .side-overlay{opacity:1; pointer-events:auto}
+.side-close{
+  position:absolute; top:.75rem; right:.75rem; width:2.25rem; height:2.25rem;
+  border-radius:50%; border:1px solid var(--line); background:var(--card); color:var(--fg);
+  font-size:1.25rem; line-height:1; cursor:pointer;
+}
+.sidebar h2{font-size:1.4rem; color:var(--fg); margin-bottom:.5rem; padding-right:2.5rem}
+.sidebar h3{font-size:.85rem; margin:1.25rem 0 .35rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted)}
+.sidebar p{color:var(--muted); font-size:.95rem}
+.sidebar ul{margin:0; padding-left:1.2rem; word-break:break-all}
+.sidebar li{margin:.3rem 0}
 @media (prefers-color-scheme:light){
   body::before{opacity:.35}
   body::after{opacity:.5}
@@ -196,5 +223,6 @@ footer p{max-width:56rem}
 @media(prefers-reduced-motion:reduce){
   body::before{animation:none; opacity:.7}
   .meteors{display:none}
+  .sidebar,.side-overlay{transition:none}
   .mk i::after{animation:none; opacity:.6}
 }

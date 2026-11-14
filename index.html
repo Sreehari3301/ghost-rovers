@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ghost Rovers</title>
-<meta name="description" content="Ghost Rovers — an interactive web story for ages 8 to 12 about the NASA machines left behind on the Moon, Mars and in deep space. Each machine tells its own story.">
+<meta name="description" content="Ghost Rovers — an interactive web story about the NASA machines left behind on the Moon, Mars and in deep space. Each machine tells its own story.">
 <meta name="theme-color" content="#04060f">
 <meta property="og:title" content="Ghost Rovers">
-<meta property="og:description" content="Pick a world, tap a glowing signal, and hear a NASA machine left behind tell its own story. For ages 8 to 12.">
+<meta property="og:description" content="Pick a world, tap a glowing signal, and hear a NASA machine left behind tell its own story.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://sreehari3301.github.io/ghost-rovers/mars.jpg">
 <meta property="og:image:alt" content="Real NASA mosaic map of Mars with the four Mars machines">
@@ -22,27 +22,31 @@
 <div class="meteors" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
 <header>
 <h1>Ghost Rovers</h1>
-<p>For ages 8 to 12. Rovers, landers, a helicopter, orbiters, a science station and a descent stage — left behind on the Moon, on Mars and out in deep space. Each machine tells its own story. Pick a world, then tap a glowing signal to hear one.</p>
+<p>They went silent years ago — but they still have stories to tell. Pick a world, then tap a glowing signal to hear one.</p>
+<button id="sideBtn" class="side-btn" aria-expanded="false" aria-controls="sidebar" aria-label="Sources and credits">☰</button>
 </header>
 <main>
 <div role="tablist" aria-label="Choose a world" id="tabs"></div>
 <div class="grid">
 <div>
 <div class="map" id="map"></div>
-<p class="note">Moon and Mars maps are real NASA mosaics. Deep Space shows real photos of Ceres and Eros on a drawn star map. Positions are from real landing coordinates where given.</p>
+<p class="note">Real maps, real places. Tap a glowing signal to wake a machine.</p>
 </div>
 <section class="panel" id="panel" aria-live="polite" tabindex="-1">
 <p class="empty">Tap a glowing signal on the map to wake up a machine.</p>
 </section>
 </div>
 </main>
-<footer>
-<h2>Sources and credits</h2>
-<p>Every fact comes from the NASA pages linked in each story. Moon and Mars maps are real NASA mosaics; the Deep Space star map is drawn for this project. Map credits are below. Stories are written for ages 8 to 12 in each machine’s imagined voice; the facts are real.</p>
-<p>About dates: for Spirit, 22 March 2010 was its last contact and 25 May 2011 was when NASA declared its mission complete. For InSight, 15 December 2022 was its last contact and 21 December 2022 was when NASA declared its mission over. Dawn’s story is short because its source page doesn’t give its ending — we kept it short rather than guessing.</p>
-<p>Mars map: NASA Ames / USGS Astrogeology, Viking Orbiter imagery (Mars Viking MDIM 2.1 colour mosaic, centred at 90°E). Moon map: NASA/GSFC/Arizona State University, LRO WAC nearside mosaic. Ceres photo: NASA/JPL-Caltech/UCLA/MPS/DLR/IDA, Dawn (bright spots, PIA19604). Eros photo: NASA/JPL/JHUAPL, NEAR Shoemaker (PIA02923). Deep Space star map is drawn for this project.</p>
+<aside id="sidebar" class="sidebar" aria-label="Sources and credits">
+<button id="sideClose" class="side-close" aria-label="Close sources and credits">×</button>
+<h2>Sources &amp; credits</h2>
+<p>Stories are told in each machine’s imagined voice — every fact is real, and each story links to its NASA pages.</p>
+<p>Maps: Moon NASA/GSFC/ASU (LRO WAC) · Mars NASA Ames/USGS (Viking) · Ceres NASA/JPL (PIA19604) · Eros NASA/JPL/JHUAPL (PIA02923).</p>
+<h3>Hear it from NASA</h3>
+<div id="sideLinks"></div>
 <p><em>They stopped calling home — but what they found still shapes what we know.</em></p>
-</footer>
+</aside>
+<div id="sideOverlay" class="side-overlay"></div>
 <script src="app.js"></script>
 </body>
 </html>

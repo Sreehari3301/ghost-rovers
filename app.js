@@ -11,16 +11,23 @@ function tabs(){var t=document.getElementById("tabs");t.innerHTML="";WORLDS.forE
 function map(){var m=document.getElementById("map");m.className=cur==="mars"?"map map-wide":"map";m.innerHTML=MAPS[cur];M.filter(function(x){return x.world===cur}).forEach(function(x){var b=el("button","mk",'<i></i><span>'+x.label+'</span>');b.style.left=x.x+"%";b.style.top=x.y+"%";b.setAttribute("aria-label","Open the story of "+x.name);b.setAttribute("aria-pressed",sel===x.id);b.onclick=function(){sel=x.id;map();show(x);document.getElementById("panel").focus({preventScroll:false})};m.appendChild(b)})}
 function list(a){return"<ul>"+a.map(function(s){return"<li>"+s+"</li>"}).join("")+"</ul>"}
 function stopSpeak(){if('speechSynthesis' in window){speechSynthesis.cancel()}var b=document.getElementById('listenBtn');if(b){b.textContent='▶ Listen to this story';b.setAttribute('aria-label','Listen to this story')}}
-function toggleSpeak(x){if(!('speechSynthesis' in window))return;if(speechSynthesis.speaking){stopSpeak();return}var u=new SpeechSynthesisUtterance(x.story);u.lang='en-US';u.rate=.95;u.onend=function(){stopSpeak()};u.onerror=function(){stopSpeak()};speechSynthesis.speak(u);var b=document.getElementById('listenBtn');if(b){b.textContent='■ Stop listening';b.setAttribute('aria-label','Stop listening')}}
-function show(x){stopSpeak();var p=document.getElementById("panel");if(!x){p.innerHTML='<p class="empty">Tap a glowing signal on the map to wake up a machine.</p>';return}
+function toggleSpeak(x){if(!('speechSynthesis' in window))return;if(speechSynthesis.speaking){stopSpeak();return}var u=new SpeechSynthesisUtterance(x.story.replace(/\n\n/g,' '));u.lang='en-US';u.rate=.95;u.onend=function(){stopSpeak()};u.onerror=function(){stopSpeak()};speechSynthesis.speak(u);var b=document.getElementById('listenBtn');if(b){b.textContent='■ Stop listening';b.setAttribute('aria-label','Stop listening')}}
+function show(x){stopSpeak();updateSideLinks(x);var p=document.getElementById("panel");if(!x){p.innerHTML='<p class="empty">Tap a glowing signal on the map to wake up a machine.</p>';return}
 var h='<h2>'+x.name+'</h2><p class="hook">“'+x.hook+'”</p>';
 if('speechSynthesis' in window){h+='<button id="listenBtn" class="listen" aria-label="Listen to this story">▶ Listen to this story</button>'}
-h+='<p>'+x.story+'</p><h3>Key facts</h3>'+list(x.facts);
-if(x.howItWorked.length)h+='<h3>How it worked</h3>'+list(x.howItWorked);
-h+='<details><summary>Read the ending</summary><p>'+x.ending+'</p>'+(x.nowAt?'<p><b>Where it is now:</b> '+x.nowAt+'</p>':'')+'</details>';
-h+='<h3>Sources</h3>'+list(x.sources.map(function(u){return'<a href="'+u+'" target="_blank" rel="noopener">'+u.replace("https://","")+'</a>'}));
+h+=x.story.split('\n\n').map(function(s){return '<p>'+s+'</p>'}).join('');
+var end=x.ending+(x.nowAt?' I am still there — '+x.nowAt.replace(/\.$/,'')+'.':'');
+h+='<p class="ending">'+end+'</p>';
 p.innerHTML=h;var lb=document.getElementById('listenBtn');if(lb){lb.onclick=function(){toggleSpeak(x)}}}
+function sideLinksHTML(x){var u=[];if(x){u=x.sources}else{M.forEach(function(m){m.sources.forEach(function(s){if(u.indexOf(s)<0)u.push(s)})})}return '<ul>'+u.map(function(s){return'<li><a href="'+s+'" target="_blank" rel="noopener">'+s.replace("https://","")+'</a></li>'}).join('')+'</ul>'}
+function updateSideLinks(x){var d=document.getElementById('sideLinks');if(d)d.innerHTML=sideLinksHTML(x)}
+function openSide(){document.body.classList.add('side-open');var b=document.getElementById('sideBtn');if(b)b.setAttribute('aria-expanded','true');var c=document.getElementById('sideClose');if(c)c.focus()}
+function closeSide(){document.body.classList.remove('side-open');var b=document.getElementById('sideBtn');if(b){b.setAttribute('aria-expanded','false');b.focus()}}
 fetch("data.json")
   .then(function(r){return r.json()})
   .then(function(d){M=d.machines;tabs();map();show(null)})
   .catch(function(){document.getElementById("panel").innerHTML='<p class="empty">Could not load data.json. Run a local server (see README) or check the file name.</p>'});
+var sb=document.getElementById('sideBtn');if(sb)sb.onclick=function(){document.body.classList.contains('side-open')?closeSide():openSide()};
+var sc=document.getElementById('sideClose');if(sc)sc.onclick=closeSide;
+var ov=document.getElementById('sideOverlay');if(ov)ov.onclick=closeSide;
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&document.body.classList.contains('side-open'))closeSide()});
