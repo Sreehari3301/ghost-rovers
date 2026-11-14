@@ -61,7 +61,7 @@
       "lat": null,
       "lon": null,
       "launch": null,
-      "status": "Mission concluded in 2010, per your NASA link.",
+      "status": "Last contact 22 March 2010. NASA declared the mission complete on 25 May 2011.",
       "hook": "I was one of a twin pair, sent to find out if Mars once had water.",
       "story": "I am Spirit. My twin Opportunity and I were robot geologists. I landed on 3 January 2004 in Gusev Crater, a place that might have been a lake long ago. I read the rocks like pages in a book, and the story they told is that water stayed on Mars for a long time.",
       "facts": [
@@ -72,14 +72,14 @@
         "Spirit traveled 7.7 km (4.8 miles) on Mars."
       ],
       "howItWorked": [],
-      "ending": "Spirit concluded its mission in 2010.",
+      "ending": "I last spoke to Earth on 22 March 2010. NASA kept listening for over a year, and on 25 May 2011 they said my mission was complete.",
       "nowAt": "Gusev Crater, Mars.",
       "sources": [
         "https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/"
       ],
       "todo": [
         "Not on your link: why Spirit's mission ended, instruments, Gusev Crater coordinates.",
-        "Note for you only: your page says Spirit concluded its mission in 2010. Other NASA coverage says last contact was 22 March 2010 and NASA declared the mission complete on 25 May 2011. Decide the wording and mention it in your credits."
+        "Decided 14 Nov 2026: show both dates — last contact 22 March 2010, declared complete 25 May 2011. See ending and credits."
       ]
     },
     {
@@ -161,7 +161,7 @@
       "lat": 4.5,
       "lon": 135.9,
       "launch": "2018-05-05",
-      "status": "Mission ended 2022-12-15, per your NASA link.",
+      "status": "Last contact 15 December 2022. NASA declared the mission over on 21 December 2022.",
       "hook": "I did not look at Mars. I listened to what was inside it.",
       "story": "I am InSight. I landed on 26 November 2018 on a flat, smooth plain called Elysium Planitia, chosen because it was safe, not because it was interesting. My job was to take the planet’s pulse: my 1.8 m robotic arm placed a seismometer and a heat probe on the ground, and I listened for marsquakes. Even Martian wind made a low rumble in my sensors.",
       "facts": [
@@ -177,14 +177,14 @@
         "A heat probe measures heat coming from inside Mars.",
         "The robotic arm lifted both instruments from the deck onto the ground."
       ],
-      "ending": "The mission ended on 15 December 2022.",
+      "ending": "My last message home was on 15 December 2022. NASA declared my mission over on 21 December 2022.",
       "nowAt": "Elysium Planitia, Mars.",
       "sources": [
         "https://science.nasa.gov/mission/insight/"
       ],
       "todo": [
         "Not on your link: why the mission ended.",
-        "Note for you only: your page lists 15 December 2022 as end of mission. Other NASA coverage says that was the last contact and NASA declared the mission over on 21 December 2022."
+        "Decided 14 Nov 2026: show both dates — last contact 15 December 2022, declared over 21 December 2022. See ending and credits."
       ]
     },
     {
@@ -208,13 +208,13 @@
         "NASA lists the mission as successful."
       ],
       "howItWorked": [],
-      "ending": "NASA lists Dawn as a successful mission. Its final chapter is still being added to this story.",
+      "ending": "NASA lists Dawn as a successful mission.",
       "nowAt": null,
       "sources": [
         "https://science.nasa.gov/mission/dawn/"
       ],
       "todo": [
-        "Not on your link: arrival dates, instruments, how it ended, where it is now. Add the Dawn Mission and Science pages to your resource list, or leave the ending as is."
+        "Not on your link: arrival dates, instruments, how it ended, where it is now. Decided 14 Nov 2026: keep the entry short — no new pages added to the resource list before submission. See credits."
       ]
     },
     {

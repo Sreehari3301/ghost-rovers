@@ -31,11 +31,11 @@ Every fact and source link comes only from the six NASA pages in the resource li
 
 ## Open gaps (see `todo` in data.json)
 
-- Dawn: arrival dates, instruments, how it ended, where it is now
+- Dawn: arrival dates, instruments, how it ended, where it is now — decided 14 Nov 2026 to keep the entry short, no new pages added before submission
 - Spirit, Opportunity, InSight, Ingenuity: why or how each mission ended, beyond what the page says
 - Apollo 15: rover details and where the rover was parked
 - Ingenuity: the page has a typo giving the first flight as August 19, 2021; the correct date is April 19, 2021
-- Spirit and InSight: the page end dates (2010 and 15 December 2022) differ from other NASA coverage; see the notes in `todo`
+- Spirit and InSight: end dates now show both last contact and the date NASA declared the mission over (Spirit: 22 March 2010 / 25 May 2011; InSight: 15 December 2022 / 21 December 2022); see the credits footer
 - Map coordinates for Gusev Crater, Meridiani Planum and Jezero Crater
 
 ## Publish with GitHub Pages
