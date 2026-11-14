@@ -25,13 +25,17 @@ Then open http://localhost:8000.
 
 Add an object to `machines` in `data.json` with: `id`, `name`, `label` (short name shown on the map), `world` (`moon`, `mars` or `deep-space`), `x`, `y` (marker position in percent), `hook`, `story`, `facts`, `howItWorked`, `ending`, `nowAt`, `sources` and `todo`.
 
-## Open fact gaps (see `todo` in data.json)
+## Sources
 
-- Several end-of-mission facts came from news copies of NASA releases (phys.org, ScienceDaily, Britannica). Replace them with the nasa.gov release pages.
-- Spirit and Opportunity: instruments and how the rovers worked
-- Apollo 15: rover top speed, battery and wheel details from a NASA page
-- Dawn: instruments and how long it will stay in orbit
-- Ingenuity: NASA's page has a typo giving the first flight as August 19, 2021; the correct date is April 19, 2021
+Every fact and source link comes only from the six NASA pages in the resource list: Apollo 15 lander (NSSDCA), Spirit and Opportunity, Ingenuity, InSight, Dawn and NEAR Shoemaker. Facts those pages do not give are left out and listed in each entry's `todo`.
+
+## Open gaps (see `todo` in data.json)
+
+- Dawn: arrival dates, instruments, how it ended, where it is now
+- Spirit, Opportunity, InSight, Ingenuity: why or how each mission ended, beyond what the page says
+- Apollo 15: rover details and where the rover was parked
+- Ingenuity: the page has a typo giving the first flight as August 19, 2021; the correct date is April 19, 2021
+- Spirit and InSight: the page end dates (2010 and 15 December 2022) differ from other NASA coverage; see the notes in `todo`
 - Map coordinates for Gusev Crater, Meridiani Planum and Jezero Crater
 
 ## Publish with GitHub Pages
