@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ghost Rovers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Ghost Rovers</h1>
+<p>NASA has left machines on the Moon, on Mars and out in deep space. They still have stories. Pick a world, then tap a glowing signal to hear one.</p>
+</header>
+<main>
+<div role="tablist" aria-label="Choose a world" id="tabs"></div>
+<div class="grid">
+<div>
+<div class="map" id="map"></div>
+<p class="note">Stylized map. Positions are approximate and not to scale.</p>
+</div>
+<section class="panel" id="panel" aria-live="polite" tabindex="-1">
+<p class="empty">Tap a glowing signal on the map to wake up a machine.</p>
+</section>
+</div>
+</main>
+<footer>
+<h2>Sources and credits</h2>
+<p>Every fact comes from the NASA pages linked in each story. The maps are drawn for this project and use no NASA images. Stories are written for ages 8 to 12 in each machine’s imagined voice; the facts are real.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
