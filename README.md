@@ -30,15 +30,15 @@ Add an object to `machines` in `data.json` with: `id`, `name`, `label` (short na
 
 ## Sources
 
-Every fact and source link comes only from the six NASA pages in the resource list: Apollo 15 lander (NSSDCA), Spirit and Opportunity, Ingenuity, InSight, Dawn and NEAR Shoemaker. Facts those pages do not give are left out and listed in each entry's `todo`.
+Every fact and source link comes only from the six NASA pages in the resource list: Apollo 15 lander (NSSDCA), Spirit and Opportunity, Ingenuity, InSight, Dawn and NEAR Shoemaker. One extra NASA detail page is used for the twin rovers only: Rover Basics, linked from the Spirit and Opportunity page, for how a rover works (mast, arm, wheels, solar panels). Facts those pages do not give are left out and listed in each entry's `todo`.
 
 The Mars map image (`mars.jpg`) is separate from the facts: it is the NASA Ames / USGS Viking Orbiter colour mosaic (MDIM 2.1, public domain), centred at 90°E. Landing coordinates for the four Mars machines come from their landing-site records, not from the six pages, and are recorded in `data.json` as `lat`/`lon`.
 
 ## Open gaps (see `todo` in data.json)
 
-- Dawn: arrival dates, instruments, how it ended, where it is now — decided 14 Nov 2026 to keep the entry short, no new pages added before submission
-- Spirit, Opportunity, InSight, Ingenuity: why or how each mission ended, beyond what the page says
-- Apollo 15: rover details and where the rover was parked
+- Dawn: arrival dates, instruments, how it ended, where it is now — decided 14 Nov 2026 to keep the entry short, no new pages added before submission. Its "How it worked" is now filled from its own page (orbiter, extended stays at Vesta and Ceres)
+- Spirit, Opportunity, InSight, Ingenuity: why or how each mission ended, beyond what the page says. Spirit and Opportunity now have "How it worked" from the Rover Basics page linked from their resource (mast, arm, wheels, solar panels); named instruments still not listed
+- Apollo 15: rover details and where the rover was parked. Descent stage now covered (it stayed on the Moon as the launch pad), and the full ALSEP instrument list is in "How it worked"
 - Ingenuity: the page has a typo giving the first flight as August 19, 2021; the correct date is April 19, 2021
 - Spirit and InSight: end dates now show both last contact and the date NASA declared the mission over (Spirit: 22 March 2010 / 25 May 2011; InSight: 15 December 2022 / 21 December 2022); see the credits footer
 - Map coordinates for Gusev Crater, Meridiani Planum and Jezero Crater
@@ -62,4 +62,4 @@ git push -u origin main
 
 ## Credits
 
-All facts come from NASA pages linked in each story. The maps are drawn for this project and use no NASA images. Check NASA media usage rules before adding NASA images.
+All facts come from NASA pages linked in each story. Moon and Mars maps are real NASA mosaics (LRO WAC and Viking MDIM 2.1); the Deep Space star map is drawn for this project, with real Ceres and Eros photos on it.
