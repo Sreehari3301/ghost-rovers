@@ -27,12 +27,12 @@ Add an object to `machines` in `data.json` with: `id`, `name`, `label` (short na
 
 ## Open fact gaps (see `todo` in data.json)
 
-- Dawn: arrival dates, instruments, how it ended, where it is now
-- Spirit: why its mission ended
-- Opportunity: official end date
-- Ingenuity: cause of the ending (NASA's page has a typo giving the first flight as August 19, 2021; the correct date is April 19, 2021)
-- InSight: why its mission ended
-- Apollo 15: rover details and where the rover was parked
+- Several end-of-mission facts came from news copies of NASA releases (phys.org, ScienceDaily, Britannica). Replace them with the nasa.gov release pages.
+- Spirit and Opportunity: instruments and how the rovers worked
+- Apollo 15: rover top speed, battery and wheel details from a NASA page
+- Dawn: instruments and how long it will stay in orbit
+- Ingenuity: NASA's page has a typo giving the first flight as August 19, 2021; the correct date is April 19, 2021
+- Map coordinates for Gusev Crater, Meridiani Planum and Jezero Crater
 
 ## Publish with GitHub Pages
 
