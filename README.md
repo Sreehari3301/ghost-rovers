@@ -10,6 +10,7 @@ Machines: Apollo 15 science station, Spirit, Opportunity, Ingenuity, InSight, Da
 - `style.css`: styles (light and dark mode, mobile friendly)
 - `app.js`: tabs, maps, markers, story panel, listen button, sources sidebar
 - `data.json`: all stories, facts and sources. Edit this to change content.
+- `audio/`: one MP3 per story (ElevenLabs narration), played by the Listen button; if a file is missing the button falls back to the browser's built-in voice.
 - `mars.jpg`: Mars map, NASA Ames / USGS Viking Orbiter mosaic (MDIM 2.1), centred at 90°E so all four Mars markers fit
 - `moon.jpg`: Moon map, NASA/GSFC/Arizona State University LRO WAC nearside mosaic
 - `ceres.jpg`, `eros.jpg`: real photos shown on the Deep Space map at the Dawn and NEAR markers (Ceres bright spots, Dawn, PIA19604; Eros north polar mosaic, NEAR, PIA02923)
@@ -64,4 +65,4 @@ git push -u origin main
 
 ## Credits
 
-All facts come from NASA pages linked in each story. Moon and Mars maps are real NASA mosaics (LRO WAC and Viking MDIM 2.1); the Deep Space star map is drawn for this project, with real Ceres and Eros photos on it.
+All facts come from NASA pages linked in each story. Moon and Mars maps are real NASA mosaics (LRO WAC and Viking MDIM 2.1); the Deep Space star map is drawn for this project, with real Ceres and Eros photos on it. Story narration voices were made with ElevenLabs.
