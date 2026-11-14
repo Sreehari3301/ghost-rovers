@@ -75,6 +75,26 @@ body::after{
     radial-gradient(600px 300px at 80% 0%, rgba(183,140,255,.14), transparent 70%),
     radial-gradient(500px 300px at 0% 60%, rgba(124,196,255,.10), transparent 70%);
 }
+/* Meteor shower — thin CSS streaks that cross the sky behind the content.
+   Pure CSS, no JS. Hidden in light mode and when reduced motion is on. */
+.meteors{position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden}
+.meteors i{
+  position:absolute; width:9rem; height:2px; border-radius:2px; display:block;
+  background:linear-gradient(90deg, rgba(255,255,255,.95), rgba(255,255,255,0));
+  box-shadow:0 0 8px 1px rgba(255,255,255,.45);
+  opacity:0; animation:meteor 10s linear infinite;
+}
+.meteors i:nth-child(1){top:8%; left:72%; --a:-45deg; animation-duration:9s; animation-delay:0s}
+.meteors i:nth-child(2){top:16%; left:52%; --a:-38deg; animation-duration:11s; animation-delay:3s}
+.meteors i:nth-child(3){top:5%; left:30%; --a:-50deg; animation-duration:8s; animation-delay:6s}
+.meteors i:nth-child(4){top:26%; left:84%; --a:-42deg; animation-duration:10s; animation-delay:1.5s}
+.meteors i:nth-child(5){top:12%; left:12%; --a:-47deg; animation-duration:12s; animation-delay:8s}
+@keyframes meteor{
+  0%{transform:rotate(var(--a,-45deg)) translateX(0); opacity:0}
+  2%{opacity:1}
+  12%{transform:rotate(var(--a,-45deg)) translateX(-55vw); opacity:0}
+  100%{transform:rotate(var(--a,-45deg)) translateX(-55vw); opacity:0}
+}
 header,main,footer{position:relative; z-index:1; max-width:68rem; margin:0 auto; padding:0 1.25rem}
 header{padding-top:2rem; padding-bottom:1rem}
 h1,h2{font-family:Fraunces,Georgia,serif; font-weight:600; line-height:1.15; margin:0}
@@ -163,10 +183,12 @@ footer p{max-width:56rem}
 @media (prefers-color-scheme:light){
   body::before{opacity:.35}
   body::after{opacity:.5}
+  .meteors{display:none}
   .mk{color:#101a3a}
   .mk span{background:rgba(255,255,255,.9); color:#101a3a}
 }
 @media(prefers-reduced-motion:reduce){
   body::before{animation:none; opacity:.7}
+  .meteors{display:none}
   .mk i::after{animation:none; opacity:.6}
 }
