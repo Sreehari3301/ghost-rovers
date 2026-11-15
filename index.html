@@ -23,7 +23,7 @@
 <header>
 <h1>Ghost Rovers</h1>
 <p>They went silent years ago — but they still have stories to tell. Pick a world, then tap a glowing signal to hear one.</p>
-<button id="sideBtn" class="side-btn" aria-expanded="false" aria-controls="sidebar" aria-label="Sources and credits">☰</button>
+<button id="sideBtn" class="side-btn" aria-expanded="false" aria-controls="sidebar" aria-label="Sources and credits"><span aria-hidden="true">☰</span> Sources</button>
 </header>
 <main>
 <div role="tablist" aria-label="Choose a world" id="tabs"></div>
@@ -31,6 +31,7 @@
 <div>
 <div class="map" id="map"></div>
 <p class="note">Real maps, real places. Tap a glowing signal to wake a machine.</p>
+<div class="chips" id="chips" role="group" aria-label="Machines on this map"></div>
 </div>
 <section class="panel" id="panel" aria-live="polite" tabindex="-1" hidden>
 <p class="empty">Tap a glowing signal on the map to wake up a machine.</p>

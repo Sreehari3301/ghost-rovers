@@ -27,7 +27,7 @@ Then open http://localhost:8000.
 
 ## Add or edit a machine
 
-Add an object to `machines` in `data.json` with: `id`, `name`, `label` (short name on the map), `world` (`moon`, `mars` or `deep-space`), `x`, `y` (marker position in percent), `hook`, `story` (separate paragraphs with a blank line), `facts`, `howItWorked`, `ending`, `nowAt` and `sources`.
+Add an object to `machines` in `data.json` with: `id`, `name`, `label` (short name on the map), `world` (`moon`, `mars` or `deep-space`), `x`, `y` (marker position in percent), `hook`, `story` (separate paragraphs with a blank line), `ending`, `nowAt` and `sources`. `facts` and `howItWorked` are optional notes and are not shown on the page. If you change a story, make a new MP3 for it (`audio/<id>.mp3`) so the voice matches the text.
 
 ## Sources
 
@@ -37,7 +37,7 @@ Map images are separate from the facts. Moon: NASA/GSFC/ASU (LRO WAC). Mars: NAS
 
 ## Accessibility
 
-Keyboard friendly (arrow keys switch worlds, Escape closes the sidebar), screen reader labels on markers and maps, reduced-motion support, light and dark mode, and a Listen button that reads each story aloud.
+Keyboard friendly (arrow keys switch worlds, Escape closes the sidebar), screen reader labels on markers and maps, reduced-motion support, light and dark mode, and a Listen button that plays each story aloud. On phones a row of machine buttons sits under the map so every machine is easy to tap, and the Sources button (top right) opens the NASA links. Every story also ends with its NASA sources.
 
 ## Design choices
 
@@ -45,6 +45,10 @@ Keyboard friendly (arrow keys switch worlds, Escape closes the sidebar), screen 
 - Narrative, not lists: every fact lives inside the machine's own story, showing how it worked and what it found — no fact sheets on the page.
 - Focus: seven specific machines, one story each, on three real maps.
 - Perspectives: each machine speaks in its own imagined voice; the NASA pages behind every fact are linked in the sidebar.
+
+## AI use
+
+This project was built with help from AI. Claude (Anthropic) helped plan the project, write the code, draft the stories and check the facts against the NASA pages linked in each story. The narration voices were made with ElevenLabs. Story text, facts and sources were reviewed before publishing. Edit this section so it describes exactly what you did yourself.
 
 ## Publish with GitHub Pages
 
